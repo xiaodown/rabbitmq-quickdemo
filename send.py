@@ -1,11 +1,21 @@
 #!/usr/bin/env python
 import pika
+import sys
 
 connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
 channel = connection.channel()
 
 channel.queue_declare(queue='hello')
 
-channel.basic_publish(exchange='', routing_key='hello', body='Hello World!')
-print " [x] Sent 'Hello World!'"
+
+total = len(sys.argv)
+if total < 2:
+	print "Must have one argument"
+	sys.exit(1)
+
+body = str(sys.argv[1])
+print (body)
+
+channel.basic_publish(exchange='', routing_key='hello', body=body)
+print " [x] Sent " + body
 connection.close()
