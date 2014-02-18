@@ -14,8 +14,6 @@ if total < 2:
 	sys.exit(1)
 
 body = str(sys.argv[1])
-print (body)
-
 channel.basic_publish(exchange='', routing_key='hello', body=body)
 print " [x] Sent " + body
 connection.close()
