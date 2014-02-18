@@ -17,6 +17,6 @@ Commands for to make demo:
  * service rabbitmq-server restart
  * http://the.hostname.or.IP:15672/ guest/guest
  * yum -y install python-pika
- * git clone git@github.com:xiaodown/rabbitmq-quickdemo.git
+ * git clone https://github.com/xiaodown/rabbitmq-quickdemo.git
  * send.py (a few times)
  * receive.py (let run) and then send.py again.
