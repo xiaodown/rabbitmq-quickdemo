@@ -4,7 +4,6 @@ rabbitmq-quickdemo
 prior to demo:
 
  * yum install git vim 
- * su -c 'rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm' (?may already be done)
 
 Commands for to make demo:
 
