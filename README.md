@@ -14,7 +14,7 @@ Commands for to make demo:
  * /usr/lib/rabbitmq/bin/rabbitmq-plugins list
  * /usr/lib/rabbitmq/bin/rabbitmq-plugins enable rabbitmq_management
  * service rabbitmq-server restart
- * http://rabbit3.dunnclan.net:15672/ guest/guest
+ * http://rabbitdemo.dunnclan.net:15672/ guest/guest
  * yum -y install python-pika
  * git clone https://github.com/xiaodown/rabbitmq-quickdemo.git
  * send.py (a few times)
