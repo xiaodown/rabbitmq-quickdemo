@@ -35,11 +35,11 @@ Also note, this is just to demo this script; for example, turning iptables off j
  * yum install -y git vim python-pika rabbitmq-server
  * service iptables stop
  * service rabbitmq-server start
- * curl localhost:5672 (verify that it's AMQP)
+ * curl localhost:5672 (verify that it\'s AMQP)
  * /usr/lib/rabbitmq/bin/rabbitmq-plugins list
  * /usr/lib/rabbitmq/bin/rabbitmq-plugins enable rabbitmq_management
  * service rabbitmq-server restart
- * http://rabbitdemo.foo.bar.baz:15672/ guest/guest (log into the web console\*)
+ * http://rabbitdemo.foo.bar.baz:15672/ guest/guest (log into the web console*)
  * git clone https://github.com/xiaodown/rabbitmq-quickdemo.git
  * for i in pants boots socks shirts undaroos ; do rabbitmq-quickdemo/send.py $i ;done
  * rabbitmq-quickdemo/receive.py 
