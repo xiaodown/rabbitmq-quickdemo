@@ -35,7 +35,7 @@ Also note, this is just to demo this script; for example, turning iptables off j
  * yum install -y git vim python-pika rabbitmq-server
  * service iptables stop
  * service rabbitmq-server start
- * curl localhost:5672 (verify that it\'s AMQP)
+ * curl localhost:5672 (verify that it says AMQP)
  * /usr/lib/rabbitmq/bin/rabbitmq-plugins list
  * /usr/lib/rabbitmq/bin/rabbitmq-plugins enable rabbitmq_management
  * service rabbitmq-server restart
@@ -45,3 +45,4 @@ Also note, this is just to demo this script; for example, turning iptables off j
  * rabbitmq-quickdemo/receive.py 
 ```
 
+*If you can't log into the web console, see [this stack overflow question](http://stackoverflow.com/questions/22850546/cant-access-rabbitmq-web-management-interface-after-fresh-install).  The reason is probably because guest/guest by default can only log in from localhost.
