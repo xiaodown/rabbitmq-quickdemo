@@ -3,7 +3,7 @@ import pika
 import sys
 import logging
 
-logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.CRITICAL)```
+logging.basicConfig(format='%(levelname)s:%(message)s', level=logging.CRITICAL)
 
 connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
 channel = connection.channel()
